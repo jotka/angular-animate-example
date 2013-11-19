@@ -1,0 +1,38 @@
+.container {
+    width:300px;
+}
+.todo-item {
+    -webkit-transition: color 0.6s, background-color 0.3s;
+    -moz-transition: color 0.6s, background-color 0.3s;
+    -ms-transition: color 0.6s, background-color 0.3s;
+    transition: color 0.6s, background-color 0.3s;
+
+    background-color: #c7fff1;
+}
+
+.todo-item label {
+    display: block;
+}
+
+.todo-item.ng-enter {
+    -webkit-animation: bounceIn 0.8s;
+    -moz-animation: bounceIn 0.8s;
+    -ms-animation: bounceIn 0.8s;
+    animation: bounceIn 0.8s;
+}
+
+.todo-item.ng-leave {
+    -webkit-animation: bounceOut 0.8s;
+    -moz-animation: bounceOut 0.8s;
+    -ms-animation: bounceOut 0.8s;
+    animation: bounceOut 0.8s;
+}
+
+.todo-complete {
+    background: #f3f3f3;
+    color: #777;
+}
+
+.todo-complete label {
+    text-decoration: line-through;
+}
