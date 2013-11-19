@@ -20,9 +20,15 @@ app.controller("TodoCtrl", function($scope) {
 
 app.controller("sampleCtrl", function($scope) {
     $scope.sampleVisible = false;
+    $scope.sample2Visible = false;
 
     $scope.show = function() {
         $scope.sampleVisible = !$scope.sampleVisible;
+    }
+    $scope.sample2Visible = false;
+
+    $scope.show2 = function() {
+        $scope.sample2Visible = !$scope.sample2Visible;
     }
 
 });
