@@ -17,3 +17,12 @@ app.controller("TodoCtrl", function($scope) {
         $scope.items = [];
     };
 });
+
+app.controller("sampleCtrl", function($scope) {
+    $scope.sampleVisible = false;
+
+    $scope.show = function() {
+        $scope.sampleVisible = !$scope.sampleVisible;
+    }
+
+});

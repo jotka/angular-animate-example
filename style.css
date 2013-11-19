@@ -2,11 +2,6 @@
     width:300px;
 }
 .todo-item {
-    -webkit-transition: color 0.6s, background-color 0.3s;
-    -moz-transition: color 0.6s, background-color 0.3s;
-    -ms-transition: color 0.6s, background-color 0.3s;
-    transition: color 0.6s, background-color 0.3s;
-
     background-color: #c7fff1;
 }
 
@@ -36,3 +31,47 @@
 .todo-complete label {
     text-decoration: line-through;
 }
+
+/*jk*/
+.sampleDiv {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+.sampleDiv.ng-hide-add,
+.sampleDiv.ng-hide-remove {
+    display:block!important;
+}
+.sampleDiv.ng-enter {
+    -webkit-animation: bounceIn 0.8s;
+    -moz-animation: bounceIn 0.8s;
+    -ms-animation: bounceIn 0.8s;
+    animation: bounceIn 0.8s;
+}
+
+.sampleDiv.ng-hide {
+    -webkit-animation: bounceOut 0.8s;
+    -moz-animation: bounceOut 0.8s;
+    -ms-animation: bounceOut 0.8s;
+    animation: bounceOut 0.8s;
+}
+
+.box { color: white; text-align: center; height: 100px; font-size: 86px; }
+.on  { background-color: green; }
+.off { background-color: red; }
+
+
+.box-show-setup, .box-hide-setup {
+    -webkit-transition:all linear 0.3s;
+    -moz-transition:all linear 0.3s;
+    -ms-transition:all linear 0.3s;
+    -o-transition:all linear 0.3s;
+    transition:all linear 0.3s;
+}
+
+.box-show-setup { opacity:0; height: 0; }
+.box-show-setup.box-show-start { opacity:1; height: 100px; }
+
+.box-hide-setup { opacity:1; height: 0; }
+.box-hide-setup.box-hide-start { opacity:0; height: 100px; }

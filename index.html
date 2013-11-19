@@ -37,5 +37,14 @@
     </div>
     <button class="btn btn-block btn-danger" ng-click="clearAll()">Clear All Items</button>
 </div>
+
+<div ng-controller="sampleCtrl">
+    <div>
+        <button ng-click="show()">Show/hide</button>
+    </div>
+    <div class="sampleDiv" ng-animate="'box'" ng-show="sampleVisible"></div>
+
+
+</div>
 </body>
 </html>
